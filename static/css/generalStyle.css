@@ -1,0 +1,321 @@
+body{background-color: white;}
+
+.topStretchBackDrop{
+  height:90px;
+  background-color:#7e46ca;
+}
+.topStretchLogo{
+    height:140px;
+
+}
+
+.topMenu{
+    height:100px;
+
+    padding:15px;
+}
+
+.contentWrapper{}
+
+.fixedStretchFooter{
+  height:50px;
+  background-color:#7e46ca;
+     position: fixed;
+     bottom:0;
+}
+
+.content{
+  border-radius: 25px;
+
+
+  width:600px;
+  background-color:#ebebeb;
+  padding:30px;
+
+    -webkit-box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.45);
+
+}
+
+
+
+.contentHead{
+ height:75px;
+}
+
+.spacer{
+ height:75px;
+
+}
+
+
+.mapboxgl-marker {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid gray;
+    background-color:lightblue;
+}
+.gatewayActions{
+  display: inline-block;
+  width: 50px;
+    margin-left:30px;
+    margin-right:50px;
+
+    padding-bottom:20px;
+    padding-top:20px;
+
+
+}
+.listTital{
+background-color:#ebebeb;
+list-style-type:none;
+font-weight: bold;
+/*padding-left:50px;*/
+text-align: center;
+
+}
+.list-group-item{
+
+  text-align: center;
+}
+
+#hello{
+    overflow:visible;
+}
+#idReveal{
+    height:82px;
+}
+
+#idReveal2{
+    border: 1px solid #7E46CA;
+    -webkit-box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+    -moz-box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+    box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+
+    background-image: url("../images/opacity75.png");
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    top:10%;
+
+    width: 80%;
+}
+.handPointer:hover{
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens /*/
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+g{
+    color:rgb(126, 70, 202);
+
+}
+#siteLogo {
+    margin-left: -10px;
+    width: 214px;
+    height: 155px;
+
+}
+
+#siteLogo:hover{
+    cursor: pointer;
+
+}
+
+
+#timeSelect{
+    border-radius:12px;
+    padding-left:10px;
+    padding-right:10px;
+    border: 1px solid #7E46CA;
+
+    -webkit-box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+    -moz-box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+    box-shadow: 7px 97px 162px -21px rgba(0,0,0,0.55);
+}
+
+
+#chartContainer{
+    height: 360px;
+    width: 100%;
+}
+
+#ourTimeInput input{
+    border-radius: 30px;
+    border-style: inset;
+    float:left;
+    font-size:15px;
+    width:40px;
+    padding:5px;
+    background-color:rgb(25, 205, 255);
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7E46CA;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nabMenue li a:hover {
+    background-color: #4CAF50;
+    text-decoration: none;
+}
+
+
+#navMenue ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7E46CA;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.active {
+    background-color:#f3b43a !important;
+}
+
+.notInitialized{
+
+    background-color: #f8dcff !important;
+}
+
+.initialized{
+
+    background-color: #dcf9da !important;
+
+}
