@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head><!--Begin Head-->
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/generalStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--javascript links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="static/js/parseCookie.js"></script>
+    <title>CloudSiren</title>
+</head><!--End head-->
+<body>
+<script src="static/js/generalFunctions.js"></script>
+<script src="static/js/addLoginToMenue.js"></script>
+<div class="container-fluid topStretchBackDrop"></div><!--purely aethetics-->
+<div class="container topStretchLogo"><!--Logo and top stretched spacer-->
+    <img id="siteLogo" src="static/images/logo.png" onclick="window.location.href='./'" alt="logo">
+    <div id="navMenue" style="width:528px;height:75px;position:absolute;margin-left:700px;margin-top:-192px;">
+
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./dataViz.html">Data Viz</a></li>
+            <li><a href="./gatewaySetup.html">Gateway Setup</a></li>
+            <li><a href="./api.html">API</a></li>
+            <li><a href="./tutorial.html">Tutorial</a></li>
+        </ul>
+
+
+    </div>
+</div><!--End Logo and top stretched spacer-->
+<!--Nav Bar-->
+<!--End Nav Bar-->
+
+
+
+<div class="container-fluid contentWrapper" style="padding:30px;"><!--Wrapper for Main Content-->
+    <div class="container contentHead"><h2>API</h2><div style="position:absolute;margin-top:-20px;margin-left:1000px;"></div> </div><!--User Tital-->
+    <div class="container content" style="min-height:180px;text-align:center;"> <!--Main Content-->
+        <br />
+        <br />
+        <a href="static/documentation/restDocV1.pdf" download><h3>Rest Documentation Download</h3></a>
+
+        <ul id="hello" class="list-group"><!--Gateway List-->
+        </ul><!--End Gateway List-->
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" style="border-radius:40px;width:800px;">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <div class="container spacer"></div><!--Aesthetic Spacer-->
+</div><!--End Main Content Wrapper-->
+
+
+
+<div class="container-fluid fixedStretchFooter"><!--Aesthetic Footer-->
+</div>
+<script src="static/js/popupWindow.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head><!--Begin Head-->
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/generalStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--javascript links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="static/js/parseCookie.js"></script>
+    <title>CloudSiren</title>
+</head><!--End head-->
+<body>
+<script src="static/js/generalFunctions.js"></script>
+<script src="static/js/addLoginToMenue.js"></script>
+<div class="container-fluid topStretchBackDrop"></div><!--purely aethetics-->
+<div class="container topStretchLogo"><!--Logo and top stretched spacer-->
+    <img id="siteLogo" src="static/images/logo.png" onclick="window.location.href='./'" alt="logo">
+    <div id="navMenue" style="width:528px;height:75px;position:absolute;margin-left:700px;margin-top:-192px;">
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./dataViz.html">Data Viz</a></li>
+            <li><a href="./gatewaySetup.html">Gateway Setup</a></li>
+            <li><a href="./api.html">API</a></li>
+            <li><a href="./tutorial.html">Tutorial</a></li>
+        </ul>
+    </div>
+</div><!--End Logo and top stretched spacer-->
+<!--Nav Bar-->
+<!--End Nav Bar-->
+<div class="container-fluid contentWrapper" style="padding:30px;"><!--Wrapper for Main Content-->
+    <div class="container contentHead"><h2>Gateway Setup</h2><div style="position:absolute;margin-top:-20px;margin-left:1000px;"></div> </div><!--User Tital-->
+    <div class="container content" style="min-height:500px;text-align:center;"> <!--Main Content-->
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <h1>Gateway Controller Easy Setup</h1>
+        <br><br><br><br><br><br><br><br><br>
+        <div class='container'>
+            <span class='pulse-button'><a href="https://nraad1.create.stedwards.edu/gateway_controller.zip" download="gateway_controller.zip">Download</a></span>
+        </div>
+
+
+
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <i class="fab fa-apple"></i>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="fakeScreen">
+            /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+            <br><br>
+            brew update
+            <br><br>
+            brew install python which easy_install # => /usr/local/share/python/easy_install easy_install pip
+            <br><br>
+            pip install psutil
+
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <i class="fab fa-linux"></i>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="fakeScreen">
+            sudo apt update
+            <br><br>
+            sudo apt install default-jre
+            <br><br>
+            sudo apt install python2.7 python-pip
+            <br><br>
+            pip install psutil
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+
+        <style>
+
+            .pulse-button {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px;
+                margin-top: -50px;
+                display: block;
+                width: 150px;
+                height: 150px;
+                font-size: 1.3em;
+                font-weight: light;
+                font-family: "Trebuchet MS", sans-serif;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 100px;
+                letter-spacing: -1px;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                background: #5a99d4;
+                cursor: pointer;
+                box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+                -webkit-animation: pulse 1.5s infinite;
+            }
+
+            .pulse-button:hover {
+                -webkit-animation: none;
+            }
+
+            @-webkit-keyframes pulse {
+                0% {
+                    -moz-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+                }
+                70% {
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+                }
+                100% {
+                    -moz-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+                    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+                }
+            }
+
+            i {
+                font-size: 100px;
+            }
+            .fakeButtons {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                position: relative;
+                top: 6px;
+                left: 6px;
+                background-color: #ff3b47;
+                border-color: #9d252b;
+                display: inline-block;
+            }
+
+            .fakeMinimize {
+                left: 11px;
+                background-color: #ffc100;
+                border-color: #9d802c;
+            }
+
+            .fakeZoom {
+                left: 16px;
+                background-color: #00d742;
+                border-color: #049931;
+            }
+
+            .fakeMenu {
+                width: 650px;
+                box-sizing: border-box;
+                height: 25px;
+                background-color: #bbb;
+                margin: 0 auto;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+
+            .fakeScreen {
+                background-color: #151515;
+                box-sizing: border-box;
+                width: 950px;
+                margin: 0 auto;
+                padding: 20px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                color: white;
+            }
+
+            p {
+                position: relative;
+                left: 15%;
+                margin-left: -8.5em;
+                text-align: left;
+                font-size: 1.25em;
+                font-family: monospace;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            span {
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .line1 {
+                color: #9CD9F0;
+                -webkit-animation: type .5s 1s steps(20, end) forwards;
+                -moz-animation: type .5s 1s steps(20, end) forwards;
+                -o-animation: type .5s 1s steps(20, end) forwards;
+                animation: type .5s 1s steps(20, end) forwards;
+            }
+
+
+
+            .line2 {
+                color: #CDEE69;
+                -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+                -moz-animation: type .5s 4.25s steps(20, end) forwards;
+                -o-animation: type .5s 4.25s steps(20, end) forwards;
+                animation: type .5s 4.25s steps(20, end) forwards;
+            }
+
+
+
+            .line3 {
+                color: #E09690;
+                -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+                -moz-animation: type .5s 7.5s steps(20, end) forwards;
+                -o-animation: type .5s 7.5s steps(20, end) forwards;
+                animation: type .5s 7.5s steps(20, end) forwards;
+            }
+
+
+
+            .line4 {
+                color: #fff;
+                -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+                -moz-animation: type .5s 10.75s steps(20, end) forwards;
+                -o-animation: type .5s 10.75s steps(20, end) forwards;
+                animation: type .5s 10.75s steps(20, end) forwards;
+            }
+
+            a{
+                text-decoration:none;
+                color:#fff;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" style="border-radius:40px;width:800px;">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <div class="container spacer"></div><!--Aesthetic Spacer-->
+</div><!--End Main Content Wrapper-->
+
+<div class="container-fluid fixedStretchFooter"><!--Aesthetic Footer-->
+</div>
+<script src="static/js/popupWindow.js"></script>
+</body>
+</html>
