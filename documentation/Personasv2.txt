@@ -1,0 +1,6 @@
+Employee
+Name: Sophie Marine
+Job Title: Asset Manager 
+Job Description: Sophie registers new gateways as they are installed in windmills. She has a phone that gets push notifications from the server when there are problems with the windmills. Sophie can search the database to see which windmills are malfunctioning and may need sensors repaired.
+Home life: Husband and one child works for two companies which is okay in this situation because of the light workload. 
+
